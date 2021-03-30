@@ -1,0 +1,158 @@
+/*  */
+
+
+* {
+	box-sizing: border-box;
+	
+}
+
+body {
+	background-image: linear-gradient(135deg, #000000 0%, #222121 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Nanum Myeongjo', serif;
+	margin: 0;
+    color: white;
+	
+}
+
+h2 {
+	position: absolute;
+	text-align: center;
+	top: 0;
+}
+
+h4 {
+	line-height: 2rem;
+	font-size: 16px;
+}
+
+.main {
+    text-align: center;
+    width: 90%;
+    opacity: 0;
+    display: none;
+    transition: opacity 2s ease-in;
+}
+
+.main .logo-main {
+    padding: 15px 0;
+    margin: 15px 0;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
+.menu {
+}
+
+.meals-main {
+	display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.meals {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0rem 1rem;
+	margin: 0rem 2rem;
+}
+
+.meals-main img {
+	height: 100px;
+	width: auto;
+}
+
+.meals-main ul {
+list-style: none;
+}
+
+.meals-main ul li {
+	
+	
+}
+
+.title {
+	color: #ffbc13;
+}
+
+.meals-main ul li h4 {
+	padding: 0 1rem;
+	margin: 0;
+}
+.meals-main ul li img {
+	padding-left: 0.4rem;
+	border-radius: 30px;
+	/* box-shadow: 0px 0px 10px #4b4949; */
+}
+
+/* pre loader */
+.loader {
+	animation: rotate 3s linear infinite;
+	height: 50px;
+	transform-origin: bottom center;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.circle {
+	animation: grow 1.5s linear infinite;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	display: inline-block;
+	margin: -10px;
+	height: 40px;
+	width: 40px;
+	transform: scale(0);
+}
+
+.circle:nth-of-type(2) {
+	animation-delay: .75s;
+	background-color: #c5a61d;
+}
+
+@keyframes grow {
+	50% {
+		transform: scale(1);
+	}
+}
+
+/* pre loader end */
+/* box */
+
+.box {
+	/* background-color: steelblue; */
+	/* border-radius: 10px; */
+	/* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2); */
+	/* margin: 10px; */
+	width: 400px;
+	/* height: 200px; */
+	transform: translateX(600%);
+	transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+	transform: translateX(-600%);
+}
+
+.box.show {
+	transform: translateX(0);
+}
+/* box endds */
