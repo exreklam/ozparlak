@@ -60,7 +60,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .meals {
@@ -78,9 +78,21 @@ h4 {
 
 .meals-main ul {
 list-style: none;
+justify-content: center;
+align-items: center;
+margin: 0;
 }
 
+.section {
+	margin-top: 5rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
 
+.section:nth-child(1) {
+	margin-top: 1rem;
+}
 
 .title {
 	color: #ffbc13;
@@ -135,17 +147,14 @@ list-style: none;
 /* box */
 
 .box {
-	/* background-color: steelblue; */
-	/* border-radius: 10px; */
-	/* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2); */
-	/* margin: 10px; */
+	
 	width: 400px;
-	/* height: 200px; */
+	
 	transform: translateX(600%);
 	transition: transform 0.4s ease;
 }
 
-.box:nth-of-type(even) {
+.box:nth-of-type(odd) {
 	transform: translateX(-600%);
 }
 
