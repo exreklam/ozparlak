@@ -74,6 +74,11 @@ h4 {
 .meals-main img {
 	height: 100px;
 	width: auto;
+	transition: transform 0.3s ease-in;
+}
+
+.meals-main img:active {
+	transform: scale(1.2);
 }
 
 .meals-main ul {
@@ -84,6 +89,8 @@ margin: 0;
 }
 
 .section {
+	margin: 0;
+	padding: 0;
 	margin-top: 5rem;
 	align-items: center;
 	justify-content: center;
@@ -162,3 +169,31 @@ margin: 0;
 	transform: translateX(0);
 }
 /* box endds */
+
+footer {
+	height: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	background-color: #ffbc13;
+	color: black;
+	width: 200px;
+	height: 50px;
+	border: #fff 3px solid;
+	border-radius: 40px;
+	font-size: 24px;
+	transition: transform 0.1s ease-in;
+}
+
+.btn:active {
+	transform: scale(1.1);
+}
+
+.btn a {
+	text-decoration: none;
+	color: #fff;
+}
