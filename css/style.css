@@ -16,6 +16,7 @@ body {
 	font-family: 'Nanum Myeongjo', serif;
 	margin: 0;
     color: white;
+	overflow-x: hidden;
 	
 }
 
@@ -52,8 +53,7 @@ h4 {
     width: 150px;
 }
 
-.menu {
-}
+
 
 .meals-main {
 	display: block;
@@ -80,10 +80,7 @@ h4 {
 list-style: none;
 }
 
-.meals-main ul li {
-	
-	
-}
+
 
 .title {
 	color: #ffbc13;
